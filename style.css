@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.master{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calcu{
+  background: linear-gradient(to right, #39393a, #000000);
+  border-radius: 5px;
+}
+.calculator{
+  max-width: 300px;
+  padding: 30px 10px 14px 10px;
+}
+.sum{
+  border: 1px solid rgb(92, 101, 114);
+  padding: 10px;
+  height: 64px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.result{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.sum h2{
+  color: rgb(196, 196, 196);
+}
+.sign{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.sign p{
+  font-size: 20px;
+}
+.btn{
+  display: grid; 
+  grid-template-columns: 62px 62px 62px 62px ; 
+  grid-template-rows: 50px 50px 50px 50px 50px; 
+}
+
+button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  border: none;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 550;
+}
+.equal{
+  width: 114px;
+}
+.a1{
+  background: linear-gradient(to right, #6bfaff, #3c94ff);
+}
+.total{
+  color: white;
+}
+.symbol{
+  color: white;
+}
+
+@media (max-width : 768px) {
+    .calculator{
+    width: 100vw;
+    height: 100vh;
+    max-width: none;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+    .sum{
+     margin-top: 154px;
+     height: 80px;
+    }
+    .btn {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 90px);
+    }
+    button{
+      font-size: 26px;
+    }
+    .equal{
+      width: 186%;
+    }
+    body{
+      overflow: hidden;
+    }
+    .sum{
+      border: none;
+      height: 80px;
+    }
+    .total{
+      font-size: 40px;
+    }
+    .sign .symbol{
+      font-size: 25px;
+    }
+}
